@@ -123,6 +123,7 @@ set.seed(973)
 # Introduction
 # Matériel et méthodes 
 - Présentation du site de Paracou 
+La forêt de Paracou se situe en Guyane Française. 
 ```{r}
 #| label: Paracou
 library("tidyverse")
@@ -167,4 +168,5 @@ paracou6 %>%
 ```
 
 # Discussion
+
 
