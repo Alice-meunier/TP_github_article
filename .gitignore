@@ -6,7 +6,6 @@
 *.html
 *.pdf
 *.log
-*.tex
 *_files/
 
 index_cache/
