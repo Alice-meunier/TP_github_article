@@ -5,6 +5,12 @@ editor: visual
 bibliography: references.bib
 ---
 
+Intro :
+
+on a change la langue du doc donc tools -\> project option -\> langage -\> french
+
+on a fait une action dans notre code donc on fait un comit -\> en haut à gauche, -\> Git , en dessous -\> commit -\> nommer le commit ex "changement de langue" et faire comit
+
 ## Objectif
 
 Comparer la diversité de Paracou [@Gourlet-Fleury2004] et de BCI [@Raby2017].
@@ -21,6 +27,8 @@ Les données d'inventaire de Paracou sont dans le dossier `data`.
 library("tidyverse")
 paracou6 <- read_csv2("data/Paracou6.csv")
 ```
+
+read_csv2 fonctionne mieux que read.csv car plus rapide pour gros dossiers
 
 Vérification des données : carte des wapas.
 
@@ -48,6 +56,8 @@ paracou6 %>%
   )
 ```
 
+rappel : %\>% dit "pipeline" sert à selectionner dans un objet les données qu'on veut et les passer à la suite du code
+
 ## BCI
 
 Les données sont dans le package *vegan* [@Oksanen2012].
@@ -73,6 +83,10 @@ BCI %>%
 # RAC
 autoplot(BCI_50ha)
 ```
+
+ici on voit qu'on a un certai nnombre de singleton (19) : espèces qu'on a vu qu'une fois
+
+estimateur de chao ou jack knive permet d'estimer la diversité rapidement sans ordi : nb d'espèces observées + nb de singletons ; car on estime que le nb de singletons correspond au nb d'espèces qu'on a pas observées car la taille de l'inventaire n'est pas parfait (à condition d'avoir mois d'1/3 de singletons)
 
 ## Profil de diversité
 
