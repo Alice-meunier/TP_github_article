@@ -11,6 +11,12 @@ on a change la langue du doc donc tools -\> project option -\> langage -\> frenc
 
 on a fait une action dans notre code donc on fait un comit -\> en haut à gauche, -\> Git , en dessous -\> commit -\> nommer le commit ex "changement de langue" et faire comit
 
+-\> comit sert à enregistrer tous les changements qu'on fait
+
+il faut ensuite "push" pour le mettre sur Github
+
+-\> pousser fait une copie sur Github
+
 ## Objectif
 
 Comparer la diversité de Paracou [@Gourlet-Fleury2004] et de BCI [@Raby2017].
